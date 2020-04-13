@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$borderColor :3px outset rgb(85, 83, 83);
+$borderColor_1: rgba($color: #08defa, $alpha: 1.0);
+$borderTop: 4px solid rgb(204, 204, 204);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(to top right, #9bd3dd, #d4d4d4);
+}
+
+.container-first .container-second {
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 20px;
+    border-top: $borderTop;
+    background: #999999;
+}
+
+#container-first__form-input {
+    float: left;
+    padding: 35px;
+    margin-top: 15px;
+    width: 30%;
+    margin-left:5%;
+    font-size: 1.4em;
+    border: $borderColor;
+    border-radius: 14px;
+    background-color: rgba($color: #213762b9, $alpha: 1.0);
+    border-color: $borderColor_1;
+}
+
+.container-first:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container-first__form-input label {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+    #container-first__form-input span {
+        color: rgba($color: #08defa, $alpha: 1.0);
+    }
+
+    #container-first__form-input input,
+    #container-first__form-input textarea {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px 2%;
+        border-radius: 7px;
+        border: 2px solid rgb(192, 192, 192);
+        font-size: 0.9em;
+        color: rgb(71, 71, 71);
+        resize: none;
+        &:focus {
+            border-color: #333333;
+        }
+    }
+
+    #container-first__form-input textarea {
+        height: 14.92em;
+    }
+
+    .btn {
+        float: left;
+        border-radius: 5px;
+        padding: 5px 32px;
+        background-color: rgb(57, 81, 160);
+        text-shadow: rgb(69, 69, 69) 0 0 2px;
+        cursor: pointer;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        &:hover {
+            background-color: rgb(31, 12, 66);
+        } 
+        &:active{
+            background-color: rgb(67, 168, 193);
+        }
+
+    }
+
+    .find {
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        color: #ffffff;
+        border-radius: 8px;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-bottom: 28px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
