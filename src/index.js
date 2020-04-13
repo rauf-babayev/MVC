@@ -49,6 +49,7 @@ input_2.max = '100';
 formTag.appendChild(input_2);
 
 const btnDiv = document.createElement('div');
+btnDiv.setAttribute('onclick', 'sendName()');
 btnDiv.setAttribute('class', 'btn');
 btnDiv.textContent = 'Submit';
 formTag.appendChild(btnDiv);
@@ -141,3 +142,14 @@ textarea_1.setAttribute('id', 'message');
 textarea_1.name = 'message';
 textarea_1.placeholder = 'Name Surname Age';
 formTag_3.appendChild(textarea_1);
+
+function sendName() {
+    let firstName = document.getElementById('name').value;  
+    let firstSurname = document.getElementById('surname').value;
+    let firstAge = document.getElementById('age').value;
+
+    let concatt = firstName + ' ' + firstSurname + ' ' + firstAge + '\n' ;
+    let oldValue = document.getElementById('message').innerHTML;
+    let newValue = concatt + oldValue;
+    document.getElementById('message').innerHTML = newValue;
+}
